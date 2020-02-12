@@ -1,6 +1,7 @@
 const mongoose = require('../connection');
 
 const OutfitSchema = new mongoose.Schema({
+   name: String,
    shirt: {
       brand: String,
       image: String

@@ -57,6 +57,24 @@ Shirt.deleteMany({}).then(() => {
                image:
                   'https://cdn.shopify.com/s/files/1/0115/5332/products/Blazer_Bethoven_VinesRed_Red__201902030071_1_Main_2000x.jpg?v=1571438887'
             });
+            Outfit.create({
+               name: 'Test outfit',
+               shirt: {
+                  brand: 'EIGHT-X',
+                  image:
+                     'https://cdn.shopify.com/s/files/1/0115/5332/products/M19103-960-2_2000x.jpg?v=1579458858'
+               },
+               pants: {
+                  brand: 'JOHNNY-ROYAL',
+                  image:
+                     'https://cdn.shopify.com/s/files/1/0115/5332/products/JOHNNY-C_royal_1113_5b0695ea-a712-444e-b315-fe3505008670_2000x.jpg?v=1576371455'
+               },
+               jacket: {
+                  brand: 'MACEOO',
+                  image:
+                     'https://cdn.shopify.com/s/files/1/0115/5332/products/Blazer_Bethoven_VinesRed_Red__201902030071_1_Main_2000x.jpg?v=1571438887'
+               }
+            });
          });
       });
    });
