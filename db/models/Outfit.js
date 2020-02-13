@@ -3,16 +3,16 @@ const mongoose = require('../connection');
 const OutfitSchema = new mongoose.Schema({
    name: String,
    shirt: {
-      brand: String,
-      image: String
+      brand: { type: String, required: true },
+      image: { type: String, required: true }
    },
    pants: {
-      brand: String,
-      image: String
+      brand: { type: String, required: true },
+      image: { type: String, required: true }
    },
    jacket: {
-      brand: String,
-      image: String
+      brand: { type: String, required: true },
+      image: { type: String, required: true }
    }
 });
 

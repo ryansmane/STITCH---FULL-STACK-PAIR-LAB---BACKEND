@@ -7,10 +7,10 @@ router.get('/', (req, res) => {
    Outfit.find().then(outfits => res.json(outfits));
 });
 
-router.get('/:name', (req, res) => {
-    Outfit.find({name: req.params.name}).then(outfit => res.json(outfit))
-})
 
+router.get('/:id', (req, res) => {
+    Outfit.findById(req.params.id).then(outfit => res.json(outfit))
+})
 router.post('/', (req, res) => {
     Outfit.create(req.body).then(outfit => res.json(outfit))
 })
