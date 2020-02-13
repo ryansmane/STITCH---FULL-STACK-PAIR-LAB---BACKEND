@@ -38,9 +38,9 @@ Shirt.deleteMany({}).then(() => {
                   'https://cdn.shopify.com/s/files/1/0115/5332/products/WALTER_stone_1863_2000x.jpg?v=1571438882'
             });
             Pants.create({
-               brand: 'JOHNNY-ROYAL',
+               brand: 'AU NOIR',
                image:
-                  'https://cdn.shopify.com/s/files/1/0115/5332/products/JOHNNY-C_royal_1113_5b0695ea-a712-444e-b315-fe3505008670_2000x.jpg?v=1576371455'
+                  'https://cdn.shopify.com/s/files/1/0115/5332/products/BERETTA_charcoal_1596_2000x.jpg?v=1571438861'
             });
             Jacket.create({
                brand: 'BERTIGO',
@@ -53,9 +53,9 @@ Shirt.deleteMany({}).then(() => {
                   'https://cdn.shopify.com/s/files/1/0115/5332/products/PRESTON-1812_2eed8e3a-5295-41f3-95bf-83b66ea6f849_2000x.jpg?v=1571438877'
             });
             Jacket.create({
-               brand: 'MACEOO',
+               brand: 'BERTIGO',
                image:
-                  'https://cdn.shopify.com/s/files/1/0115/5332/products/Blazer_Bethoven_VinesRed_Red__201902030071_1_Main_2000x.jpg?v=1571438887'
+                  'https://cdn.shopify.com/s/files/1/0115/5332/products/PRESTON-92_2000x.jpg?v=1571438876'
             });
             Outfit.create({
                name: 'Test outfit',
@@ -65,14 +65,14 @@ Shirt.deleteMany({}).then(() => {
                      'https://cdn.shopify.com/s/files/1/0115/5332/products/M19103-960-2_2000x.jpg?v=1579458858'
                },
                pants: {
-                  brand: 'JOHNNY-ROYAL',
+                  brand: 'AU NOIR',
                   image:
-                     'https://cdn.shopify.com/s/files/1/0115/5332/products/JOHNNY-C_royal_1113_5b0695ea-a712-444e-b315-fe3505008670_2000x.jpg?v=1576371455'
+                     'https://cdn.shopify.com/s/files/1/0115/5332/products/BERETTA_charcoal_1596_2000x.jpg?v=1571438861'
                },
                jacket: {
-                  brand: 'MACEOO',
+                  brand: 'BERTIGO',
                   image:
-                     'https://cdn.shopify.com/s/files/1/0115/5332/products/Blazer_Bethoven_VinesRed_Red__201902030071_1_Main_2000x.jpg?v=1571438887'
+                     'https://cdn.shopify.com/s/files/1/0115/5332/products/PRESTON-92_2000x.jpg?v=1571438876'
                }
             });
          });
