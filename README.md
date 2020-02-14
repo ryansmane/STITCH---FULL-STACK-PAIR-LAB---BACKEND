@@ -1,8 +1,8 @@
 # 👨‍💻 Pair Project
 ## Collaborators
-### Ryan Zimmer
-### Jade Kang
-### Link to front-end
+- Ryan Zimmer
+- Jade Kang
+## Link to front-end
 https://github.com/jadekang0611/stitch-front-end
 ## Project Description
 - This API displays articles of clothing and contains one model with all four CRUD routes (outfits).
