@@ -2,83 +2,26 @@
 ## Collaborators
 ### Ryan Zimmer
 ### Jade Kang
+### Link to front-end
+https://github.com/jadekang0611/stitch-front-end
 ## Project Description
-- Build an api that gathers information for outfit selections
-## Plan for the Day
-### Daisy and Jade will be building the following:
-- Download dependencies (mongoose, express)
-- Set up local host connection and mongo database connection
-- Define 4 models/1 controller: shirt, pants, jacket, outfit
-- 
+- This API displays articles of clothing and contains one model with all four CRUD routes (outfits).
+- Employs the ME and N of a full stack MERN application (Mongo, Express, and Node)
+- Front end deployed here (hopefully these backend servers stay up): http://stitchappjrfrontend.herokuapp.com/
+- Time to complete: <24 hours
 
--to communicate.
-## Items in detail
-### Recipe schema:
-    - Title
-    - Description
-    - Instructions
-    - Ingredients
-### Controller
-    - It's the recipe controller:
-    	- GET all recipes
-        - GET individual recipes/:title
-        - POST recipe to save a new recipe
-        - PUT recipe to update a recipe (recipe/:title)
-        - DELETE recipe to delete a recipe (recipe/:title)
-### Handlebars
-- New Handlebar
-  ```
-  <h2>Add a new Recipe:</h2>
-  	<form action="/recipes" method="post" accept-charset="utf-8">
-  		<label for="title">Title</label>
-      	<input type="text" id="title" name="title" >
-      	<input type="submit" value="Add to do">
-      </form>
-  ```
-- Show Handlebar
-  ```<h1>{{title}}</h1>
-  	{{#if complete}}
-      	<p>Cook!</p>
-      {{else}}
-      	<p>Haven't tried yet!</p>
-      {{/if}}
-      	<form action="/todos/{{_id}}?_method=delete" method="post">
-      		<input type="submit" value="Remove">
-      	</form>
-  ```
-- Edit Handlebar
-  ```
-  <h2>Edit My Recipe:</h2>
-  		<form action="/todos/{{this._id}}?_method=put" method="POST">
-  			<p>
-              	<label>Title:</label>
-                  <input type="text" value="{{this.title}}" name="title" />
-              </p>
-  			<p>
-              	<label>Complete:</label>
-     		 {{#if complete}}
-     			 <input type="checkbox" name="complete" checked />
-      	{{else}}
-     			 <input type="checkbox" name="complete" />
-      	{{/if}}
-  			</p>
-  			<input type="submit" value="Update" />
-  		</form>
-  ```
-- Delete Handlebar
-  ```
-  <form action="/recipes/{{_id}}?_method=delete" method="post">
-  <input type="submit" value="Remove"></form>
-  ```
-- Index Handlebar
-  ```
-  <h1>Yummy!</h1>
-  <ul>
-  {{#each todos}}
-  <li>
-      <a href='todos/{{this._id}}'>{{this.title}}</a>
-      <a href='todos/{{this._id}}/edit'>Edit</a>
-  </li>
-  {{/each}}</ul> <a href='todos/new'>New</a>
-  ```
+## Process
+-Jade and I used paired-programming principles to divide work, switching typer/navigator every two commits.
+-Building out the API was easy enough, we began by designing 4 schemas, seeded base data, and wrote 4 controllers.
+-Next came the React front-end - the R of MERN - which we divided the same way.
+-The front end uses AJAX calls to our backend API, which retrieves clothing data as well as CRUDS an outfit collection dependent on what articles of clothing the user selects.
+-React Tech Used: Hooks, Routes, Links, Switches, Functional components exclusively
+
+## Challenges
+-Due to our limited time window, Jade and I settled on a simplified form of our app, with static articles (3 of each type), which resulted in an overall boring user landscape. This could be improved upon easily with a better base seed or a third party API seed.
+-React stateful issues came and went quickly, but they did come. 
+-Minor styling bumps that required slight manipulation to stay mobile-friendly 
+
+
+
 
