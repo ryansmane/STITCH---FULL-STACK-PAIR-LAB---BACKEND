@@ -8,6 +8,7 @@ https://github.com/jadekang0611/stitch-front-end
 - This API displays articles of clothing and contains one model with all four CRUD routes (outfits).
 - Employs the ME and N of a full stack MERN application (Mongo, Express, and Node)
 - Front end deployed here (hopefully these backend servers stay up): http://stitchappjrfrontend.herokuapp.com/
+- Back end deployed here: http://stitchappjr.herokuapp.com/outfits - endpoints are /shirts,/pants,/jackets,/outfits
 - Time to complete: <24 hours
 
 ## Process
